@@ -2,6 +2,7 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	margin-top: 400px;
 }
 
 #name {
@@ -33,9 +34,11 @@
 }
 
 .segment {
-	background-color: black;
+	
 	height: 13px;
+	overflow: hidden;
 	width: 100px;
+		transform: rotate(180deg);
 }
 
 #segment6, #segment7, #segment8, #segment9, #segment10, #segment11, #segment12, #segment13, #segment14 {
@@ -54,24 +57,15 @@
 	position: relative;
 }
 
+.fill {
+	background-color: black;
 
-/*step 1*/
-
-.segment {
-	width: 90px;
 }
 
-#segment2 {
-	width: 80px;
+p {
+	font-size: 24px;
 }
 
-#segment3, #segment4 {
-	width: 40px;
-}
-
-#segment4 {
-	left: 30px;
-}
 
 
 /*step 2*/
@@ -98,66 +92,37 @@
 }
 
 
-/*step 3*/
+
+
+
+
+
+
+
+/*step 6*/
 
 #segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
 	bottom: 0;
 	display: block;
-	height: 40px;
+	height: 110px;
 	position: absolute;
 	width: 15px;
 }
 
+
 #segment7 {
 	left: 22px;
-}
-
-
-#segment9 {
-	bottom: 8px;
-	left: 61px;
-	transform: rotate(-31deg);
-	transform-origin: bottom right;
 }
 
 #segment10 {
 	left: 66px;
 }
 
-
-/*step 4*/
-#segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
-	height: 80px;
-}
-
-#segment9 {
-	height: 90px;
-}
-
 #segment12 {
 	bottom: 50px;
 	display: block;
 	position: absolute;
-	width: 35px;
-}
-
-/*step 5*/
-#segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
-	height: 100px;
-}
-
-#segment9 {
-	height: 110px;
-}
-
-#segment12 {
 	width: 70px;
-}
-
-/*step 6*/
-
-#segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
-	height: 110px;
 }
 
 #segment13, #segment14 {
@@ -168,12 +133,17 @@
 }
 
 #segment9 {
+	bottom: -4px;
+	left: 31px;
 	height: 118px;
+	transform: rotate(149deg);
 }
 
 #segment14 {
 	width: 80px;
 }
+
+
 
 
 
