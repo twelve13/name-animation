@@ -1,0 +1,180 @@
+#container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+#name {
+	display: flex;
+	font-family: 'Lato', sans-serif;
+	font-size: 150px;
+}
+
+#line {
+	align-items: flex-end;
+	display: flex;
+	height: 150px;
+	margin-left: 20px;
+	width: 400px;
+}
+
+.letter-container {
+	display: flex;
+	position: relative;
+	width: 100px;
+}
+
+#container-i {
+	width: 80px;
+}
+
+#container-n {
+	width: 110px;
+}
+
+.segment {
+	background-color: black;
+	height: 13px;
+	width: 100px;
+}
+
+#segment6, #segment7, #segment8, #segment9, #segment10, #segment11, #segment12, #segment13, #segment14 {
+	display: none;
+}
+
+#segment2 {
+	width: 80px;
+}
+
+#segment3, #segment4 {
+	width: 55px;
+}
+
+#segment4 {
+	position: relative;
+}
+
+
+/*step 1*/
+
+.segment {
+	width: 90px;
+}
+
+#segment2 {
+	width: 80px;
+}
+
+#segment3, #segment4 {
+	width: 40px;
+}
+
+#segment4 {
+	left: 30px;
+}
+
+
+/*step 2*/
+
+.segment {
+	width: 80px;
+}
+
+#segment1 {
+	width: 70px;
+}
+
+#segment2 {
+	width: 60px;
+}
+
+#segment3 {
+	width: 15px;
+}
+
+#segment4 {
+	left: 48px;
+	width: 18px;
+}
+
+
+/*step 3*/
+
+#segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
+	bottom: 0;
+	display: block;
+	height: 40px;
+	position: absolute;
+	width: 15px;
+}
+
+#segment7 {
+	left: 22px;
+}
+
+
+#segment9 {
+	bottom: 8px;
+	left: 61px;
+	transform: rotate(-31deg);
+	transform-origin: bottom right;
+}
+
+#segment10 {
+	left: 66px;
+}
+
+
+/*step 4*/
+#segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
+	height: 80px;
+}
+
+#segment9 {
+	height: 90px;
+}
+
+#segment12 {
+	bottom: 50px;
+	display: block;
+	position: absolute;
+	width: 35px;
+}
+
+/*step 5*/
+#segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
+	height: 100px;
+}
+
+#segment9 {
+	height: 110px;
+}
+
+#segment12 {
+	width: 70px;
+}
+
+/*step 6*/
+
+#segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
+	height: 110px;
+}
+
+#segment13, #segment14 {
+	display: block;
+	position: absolute;
+	bottom: 97px;
+	width: 60px;
+}
+
+#segment9 {
+	height: 118px;
+}
+
+#segment14 {
+	width: 80px;
+}
+
+
+
+
