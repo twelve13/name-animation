@@ -19,118 +19,83 @@ $(document).ready(function() {
 
 			fill.height(distance/3);
 
-
+			//scrolling down
 			if (distance > currentPos) {
 				if(segment1.width() > 70) {
 					segment1.width(100-distance);
 				}
+
+				if(segment2.width() > 60) {
+					segment2.width(100-distance);
+				}
+
+				if(segment3.width() > 15) {
+					segment3.width(100-distance);
+				}
+
+				if(segment5.width() > 80) {
+					segment5.width(100-distance);
+				}
+
+				if(segment7.height() > 120) {
+					segment13Fill.width(segment13Fill.width()+2);
+				}
+
+				if(segment7.height() > 120) {
+					segment15Fill.width(segment15Fill.width()+2);
+				}
+
+				if(segment7.height() > 60) {
+					segment12Fill.width(segment12Fill.width()+2);
+				}
+
+				if(segment7.height() > 120) {
+					segment14Fill.width(segment14Fill.width()+4);
+				}
+
+				//scrolling up
 			} else {
 				if(segment1.width() < 100) {
 					segment1.width(segment1.width()+100/distance);
 				}
 
-				if(distance == 0) {
-					segment1.width(100);
-				}
-			}
-
-			if (distance > currentPos) {
-				if(segment2.width() > 60) {
-					segment2.width(100-distance);
-				}
-			} else {
 				if(segment2.width() < 100) {
 					segment2.width(segment2.width()+100/distance);
 				}
 
-				if(distance == 0) {
-					segment2.width(100);
-				}
-			}
-
-			if (distance > currentPos) {
-				if(segment3.width() > 15) {
-					segment3.width(100-distance);
-				}
-			} else {
 				if(segment3.width() < 100) {
 					segment3.width(segment3.width()+100/distance);
 				}
 
-				if(distance == 0) {
-					segment3.width(100);
-				}
-			}
-
-
-			if (distance > currentPos) {
-				if(segment5.width() > 80) {
-					segment5.width(100-distance);
-				}
-			} else {
 				if(segment5.width() < 100) {
 					segment5.width(segment5.width()+100/distance);
 				}
 
-				if(distance == 0) {
-					segment5.width(100);
-				}
-			}
-
-			if (distance > currentPos) {
-				if(segment7.height() > 120) {
-					segment13Fill.width(segment13Fill.width()+2);
-				}
-			} else {
 				if(segment7.height() < 120) {
 					segment13Fill.width(segment13Fill.width()-8);
 				}
 
-				if(distance == 0) {
-					segment13Fill.width(0);
-				}
-			}
-
-			if (distance > currentPos) {
-				if(segment7.height() > 120) {
-					segment15Fill.width(segment15Fill.width()+2);
-				}
-			} else {
 				if(segment7.height() < 120) {
 					segment15Fill.width(segment15Fill.width()-8);
 				}
 
-				if(distance == 0) {
-					segment15Fill.width(0);
-				}
-			}
-
-
-			if (distance > currentPos) {
-				if(segment7.height() > 60) {
-					segment12Fill.width(segment12Fill.width()+2);
-				}
-			} else {
 				if(segment7.height() < 80) {
 					segment12Fill.width(segment12Fill.width()-8);
 				}
 
-				if(distance == 0) {
-					segment12Fill.width(0);
-				}
-			}
-
-
-			if (distance > currentPos) {
-				if(segment7.height() > 120) {
-					segment14Fill.width(segment14Fill.width()+4);
-				}
-			} else {
 				if(segment7.height() < 120) {
 					segment14Fill.width(segment14Fill.width()-8);
 				}
 
+				//reset horizontal lines if at top of screen
 				if(distance == 0) {
+					segment1.width(100);
+					segment2.width(100);
+					segment3.width(100);
+					segment5.width(100);
+					segment13Fill.width(0);
+					segment15Fill.width(0);
+					segment12Fill.width(0);
 					segment14Fill.width(0);
 				}
 			}
