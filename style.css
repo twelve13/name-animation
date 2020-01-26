@@ -29,14 +29,17 @@
 	width: 80px;
 }
 
-/*#container-n {
-	width: 110px;
-}*/
-
+/*since height grows from top to bottom, flip these so they grow vertically*/
 .segment {
 	height: 13px;
 	overflow: hidden;
 	transform: rotate(180deg);
+	width: 100px;
+}
+
+.top-segment {
+	height: 13px;
+	overflow: hidden;
 	width: 100px;
 }
 
@@ -50,17 +53,24 @@
 	height: 100px;
 }
 
+.top-fill {
+	background-color: black;
+	height: 13px;
+	position: absolute;
+	
+	width: 0px;
+}
+
+#segment13 .top-fill, #segment15 .top-fill {
+	right: 50%;
+}
+
+
 p {
 	font-size: 24px;
 }
 
 
-
-
-/*#segment4 {
-	left: 54px;
-	position: relative;
-}*/
 
 #segment6, #segment7, #segment8, #segment9, #segment10, #segment11 {
 	bottom: 0;
@@ -91,7 +101,7 @@ p {
 	width: 70px;
 }
 
-#segment13, #segment14 {
+#segment13, #segment14, #segment15 {
 	display: block;
 	position: absolute;
 	bottom: 97px;
@@ -101,6 +111,12 @@ p {
 #segment14 {
 	width: 80px;
 }
+
+#segment15 {
+	transform: rotate(0deg);
+}
+
+
 
 
 
