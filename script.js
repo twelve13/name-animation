@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	let bottomSegment = $(".bottom-segment");
+	let topFill = $(".top-fill");
 	let fill = $(".fill");
 	let segment13Fill = $("#segment13 .top-fill");
 	let segment15Fill = $("#segment15 .top-fill");
@@ -21,21 +22,8 @@ $(document).ready(function() {
 
 			//scrolling down
 			if (distance > currentPos) {
-				if(segment1.width() > 70) {
-					segment1.width(100-distance);
-				}
-
-				if(segment2.width() > 60) {
-					segment2.width(100-distance);
-				}
-
-				if(segment3.width() > 15) {
-					segment3.width(100-distance);
-				}
-
-				if(segment5.width() > 80) {
-					segment5.width(100-distance);
-				}
+				
+				bottomSegment.width(100-distance);
 
 				if(segment7Fill.height() > 120) {
 					segment13Fill.width(segment13Fill.width()+2);
@@ -78,10 +66,7 @@ $(document).ready(function() {
 				//reset horizontal lines if at top of screen
 				if(distance == 0) {
 					bottomSegment.width(100);
-					segment12Fill.width(0);
-					segment13Fill.width(0);
-					segment14Fill.width(0);
-					segment15Fill.width(0);
+					topFill.width(0);
 				}
 			}
 	

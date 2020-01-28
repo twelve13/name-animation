@@ -116,7 +116,21 @@ p {
 	transform: rotate(0deg);
 }
 
+#segment1 {
+	min-width: 70px;
+}
 
+#segment2 {
+	min-width: 60px;
+}
+
+#segment3 {
+	min-width: 15px;
+}
+
+#segment5 {
+	min-width: 80px;
+}
 
 
 
