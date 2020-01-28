@@ -9,7 +9,6 @@ $(document).ready(function() {
 	let segment1 = $("#segment1");
 	let segment2 = $("#segment2");
 	let segment3 = $("#segment3");
-
 	let segment5 = $("#segment5");
 	let segment7Fill = $("#segment7 .fill")
 
@@ -50,8 +49,20 @@ $(document).ready(function() {
 
 				//scrolling up
 			} else {
-				if(bottomSegment.width() < 100) {
-					bottomSegment.width(segment1.width()+100/distance);
+				if(segment1.width() < 100) {
+					segment1.width(segment1.width()+100/distance);
+				}
+
+				if(segment2.width() < 100) {
+					segment2.width(segment2.width()+100/distance);
+				}
+
+				if(segment3.width() < 100) {
+					segment3.width(segment3.width()+100/distance);
+				}
+
+				if(segment5.width() < 100) {
+					segment5.width(segment5.width()+100/distance);
 				}
 
 				if(segment7Fill.height() < 120) {
