@@ -11,10 +11,36 @@ $(document).ready(function() {
 	let segment2 = $("#segment2");
 	let segment3 = $("#segment3");
 	let segment5 = $("#segment5");
-	let segment7Fill = $("#segment7 .fill")
 
 	
 	let currentPos = 0;
+	let startingDistance = $(window).scrollTop();
+
+	
+	fill.height(startingDistance/3);
+
+	bottomSegment.width(100-startingDistance);
+
+	if(startingDistance > 350) {
+		segment13Fill.width((.2*startingDistance)-55);
+		segment14Fill.width((.75*startingDistance)-230);
+		segment15Fill.width((.2*startingDistance)-55);
+	}
+
+	if(startingDistance > 190) {
+		segment12Fill.width((.25*startingDistance)-25);
+	}
+
+	segment1.width(70+(250/startingDistance));
+
+	segment2.width(60+(250/startingDistance));
+
+	segment3.width(15+(250/startingDistance));
+
+	segment5.width(80+(250/startingDistance));
+
+
+
 	$(window).scroll(function() {
 			let distance = $(window).scrollTop();
 
@@ -25,41 +51,35 @@ $(document).ready(function() {
 				
 				bottomSegment.width(100-distance);
 
-				if(segment7Fill.height() > 120) {
-					segment13Fill.width(segment13Fill.width()+2);
-					segment14Fill.width(segment14Fill.width()+4);
-					segment15Fill.width(segment15Fill.width()+2);
+				if(distance > 350) {
+					segment13Fill.width((.2*distance)-55);
+					segment14Fill.width((.75*distance)-230);
+					segment15Fill.width((.2*distance)-55);
 				}
 
-				if(segment7Fill.height() > 60) {
-					segment12Fill.width(segment12Fill.width()+2);
+				if(distance > 190) {
+					segment12Fill.width((.25*distance)-25);
 				}
 
 				//scrolling up
 			} else {
-				if(segment1.width() < 100) {
-					segment1.width(segment1.width()+100/distance);
-				}
+				
+					segment1.width(70+(250/distance));
 
-				if(segment2.width() < 100) {
-					segment2.width(segment2.width()+100/distance);
-				}
+					segment2.width(60+(250/distance));
 
-				if(segment3.width() < 100) {
-					segment3.width(segment3.width()+100/distance);
-				}
+					segment3.width(15+(250/distance));
 
-				if(segment5.width() < 100) {
-					segment5.width(segment5.width()+100/distance);
-				}
+					segment5.width(80+(250/distance));
+				
 
-				if(segment7Fill.height() < 120) {
+				if(distance < 350) {
 					segment13Fill.width(segment13Fill.width()-8);
 					segment14Fill.width(segment14Fill.width()-8);
 					segment15Fill.width(segment15Fill.width()-8);
 				}
 
-				if(segment7Fill.height() < 80) {
+				if(distance < 190) {
 					segment12Fill.width(segment12Fill.width()-8);
 				}
 
@@ -69,10 +89,8 @@ $(document).ready(function() {
 					topFill.width(0);
 				}
 			}
-	
 
 			currentPos = distance;
-
 				
 	});
 

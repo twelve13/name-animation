@@ -32,6 +32,7 @@
 /*since height grows from top to bottom, flip these so they grow vertically*/
 .segment {
 	height: 13px;
+	max-width: 100px;
 	overflow: hidden;
 	transform: rotate(180deg);
 	width: 100px;
@@ -98,7 +99,7 @@ p {
 	bottom: 50px;
 	display: block;
 	position: absolute;
-	width: 70px;
+	width: 60px;
 }
 
 #segment13, #segment14, #segment15 {
